@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+header {
+    width: 100%;
+    height: 95px;
+}
+
+#navbar {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: -700px;
+    width: 49.5%;
+    height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+    background: rgba(255, 165, 0, 0.5);
+    transition: left 0.7s ease;
+    text-align: right;
+    padding-top: 200px;
+    padding-right: 20px;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.h-container {
+    width: 80%;
+    height: 95px;
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;    
+}
+
+.h-menu {
+    margin-top: 60px;
+}
+
+.h-menu button {
+    border: none;
+    background-color: transparent;
+    z-index: 10000;
+}
+
+.h-menu button i {
+    margin-right: 6px;
+}
+
+.h-menu a, .h-languages a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.h-menu a i, .h-languages a i {
+    margin-right: 5px;
+}
+
+.h-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.h-languages {
+    margin-top: 60px;
+}
+
+section#fashion {
+    width: 100%;
+    height: auto;
+}
+
+.fashion-container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+.fashion-title {
+    width: 100%;
+    height: 100px;
+    padding-top: 15px;
+}
+
+.fashion-title h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fashion-des1 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.fashion-des1 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+}
+
+.fashion-des2 {
+    display: flex;
+    padding-top: 40px;
+}
+
+.text2 {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.text2 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: justify;
+}
+
+.text2 h1 {
+    font-size: 150px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: right;
+    margin-top: 36px;
+}
+
+.img2 {
+    width: 50%;
+}
+
+.fashion-des2 .img2 img {
+    width: 100%;
+}
+
+.fashion-des3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-empty {
+    width: 33%;
+}
+
+.text3 {
+    width: 33%;
+}
+
+.text3-1 {
+    width: 33%;
+}
+
+.fashion-des3 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: justify;
+}
+
+.fashion-des3 h1 {
+    font-size: 180px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: right;
+}
+
+.fashion-des4 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+.fashion-des5 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.img5 {
+    width: 50%;
+}
+
+.img5 img {
+    width: 100%;
+}
+
+.text5 {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.text5 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.fashion-des6 h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+.fashion-des7 {
+    padding-top: 60px;
+}
+
+.fashion-des7 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+.fashion-des7 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+}
+
+.fashion-des8 {
+    display: flex;
+    padding-top: 70px;
+}
+
+.text8 {
+    width: 50%;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+.text8 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: justify;
+}
+
+.text8 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.text8 img {
+    width: 100%;
+}
+
+.img8 {
+    width: 50%;
+}
+
+.img8 img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.f-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.f-row1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row1-img #f-img1 {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.row1-img #f-img2 {
+    width: 250px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.f-row2 {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.f-row3 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row2-title h3, .row3-info1 h3, .row3-info2 h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.row2-title #r2-e {
+    text-align: right;
+}
+
+.row2-title h3 {
+    text-align: left;
+}
+
+.row3-info1 h3 {
+    text-align: left;
+}
+
+.row3-info2 h3 {
+    text-align: right;
+}
+
+
+@media (min-width: 1920px) {
+    #navbar {
+        left: -950px;
+        padding-top: 350px;
+    }
+}

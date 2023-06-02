@@ -174,7 +174,7 @@ section#contact {
     width: 100%;
     height: 100vh;
     border-bottom: 1px solid var(--black);
-    background-image: url(./images/anh3.png);
+    background-image: url(../images/anh3.png);
     background-size: 100%;
     display: flex;
     justify-content: center;
@@ -366,6 +366,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .f-row3 {
@@ -374,10 +375,55 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
-.row2-title h3, .row3-info h3 {
+.row2-title h3, .row3-info1 h3, .row3-info2 h3 {
     font-size: 15px;
     font-weight: 500;
     color: var(--black);
+}
+
+.row2-title #r2-e {
+    text-align: right;
+}
+
+.row2-title h3 {
+    text-align: left;
+}
+
+.row3-info1 h3 {
+    text-align: left;
+}
+
+.row3-info2 h3 {
+    text-align: right;
+}
+
+@media (min-width: 1920px) {
+    #navbar {
+        left: -950px;
+        padding-top: 350px;
+    }
+
+    .sp-card {
+        width: 100%;
+        height: 410px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .card {
+        width: 500px;
+        height: 520px;
+    }
+    
+    .card img {
+        height: 520px;
+    }
+    
+    .card-title a {
+        margin-top: 300px;
+    }
 }
