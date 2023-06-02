@@ -293,6 +293,40 @@ section#net {
 .my-table th {
     background-color: #f2f2f2;
 }
+
+.h-menu button {
+    border: none;
+    background-color: transparent;
+    z-index: 10000;
+}
+
+.h-menu button i {
+    margin-right: 6px;
+}
+
+#navbar {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: -700px;
+    width: 49.5%;
+    height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+    background: rgba(255, 165, 0, 0.5);
+    transition: left 0.7s ease;
+    text-align: right;
+    padding-top: 200px;
+    padding-right: 20px;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
   
 footer {
     width: 100%;

@@ -16,7 +16,15 @@
     <header>
         <div class="h-container">
             <div class="h-menu">
-                <a href=""><i class="fa-solid fa-bars"></i>MENU</a>
+                <button id="menu-button"><i class="fa-solid fa-bars"></i>Menu</button>
+            </div>
+            <div id="navbar">
+                <a href="kitchenTool.html">DỤNG CỤ NHÀ BẾP</a>
+                <a href="kitchenTool2.html">THIẾT BỊ ĐIỆN GIA DỤNG</a>
+                <a href="fashionKitchen.html">GIA DỤNG LẮP ĐẶT</a>
+                <a href="">MOON COLLECTION</a>
+                <a href="news.html">TIN TỨC</a>
+                <a href="support.html">VỀ CHÚNG TÔI</a>
             </div>
             <div class="h-logo">
                 <img src="./images/logo-hwk.png" alt="">
@@ -193,6 +201,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const navbar = document.getElementById('navbar');
+        let isNavbarOpen = false;
+
+        menuButton.addEventListener('click', function() {
+            if (isNavbarOpen) {
+            navbar.style.left = '-700px';
+            isNavbarOpen = false;
+        } else {
+            navbar.style.left = '0';
+            isNavbarOpen = true;
+        }
+        });
+
+        navbar.addEventListener('click', function() {
+        navbar.style.left = '-700px';
+        });
+
+    </script>
 
 </body>
 </html>
