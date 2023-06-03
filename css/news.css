@@ -14,6 +14,8 @@ body {
 :root {
     --black: #333;
     --white: #fff;
+    --gray: #A8A8A8;
+    --gray2: #ECECEC;
 }
 
 header {
@@ -55,10 +57,20 @@ header {
     margin-top: 60px;
 }
 
-secion#news {
+secion#news1,  secion#news2 {
     width: 100%;
     height: 200vh;
 }
+
+.n-container {
+    display: none;
+}
+
+.active {
+    color: var(--black);
+    background-color: aqua;
+}
+
 
 .news-container {
     width: 80%;
@@ -132,29 +144,41 @@ secion#news {
     object-fit: cover;
 }
 
-.pagination {
+#news button {
     text-align: center;
-  }
-  
-  .page {
-    display: none;
-  }
-  
-  .page.active {
-    display: block;
-  }
-  
-  .item {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f2f2f2;
-  }
-  
-  .h-menu button {
-    border: none;
-    background-color: transparent;
-    z-index: 10000;
 }
+
+/* CSS cho section */
+
+  /* CSS cho nút button */
+  .pagination, .pagination1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination1 button {
+    padding: 5px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--gray);
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .pagination button {
+    padding: 5px 10px;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    cursor: pointer;
+  }
+
+  .pagination button:hover {
+    background-color: #ddd;
+  }
 
 .h-menu button i {
     margin-right: 6px;
@@ -226,6 +250,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row2-title img {
+    width: 100px;
 }
 
 .f-row3 {

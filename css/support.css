@@ -366,6 +366,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .f-row3 {
@@ -389,6 +390,10 @@ footer {
 
 .row2-title h3 {
     text-align: left;
+}
+
+.row2-title img {
+    width: 100px;
 }
 
 .row3-info1 h3 {

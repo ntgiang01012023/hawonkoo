@@ -14,6 +14,8 @@ body {
 :root {
     --black: #333;
     --white: #fff;
+    --gray: #A8A8A8;
+    --gray2: #ECECEC;
 }
 
 header {
@@ -48,7 +50,7 @@ header {
 .h-container {
     width: 80%;
     height: 95px;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +74,7 @@ header {
 .h-menu a, .h-languages a {
     text-decoration: none;
     font-size: 14px;
-    color: var(--black);
+    color: var(--gray);
 }
 
 .h-menu a i, .h-languages a i {
@@ -112,15 +114,25 @@ section#fashion {
     text-align: center;
 }
 
+.fashion-des1 {
+    width: 100%;
+}
+
 .fashion-des1 img {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 80px;
 }
 
-.fashion-des1 h3 {
+.des1-text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.fashion-des1 .des1-text h3 {
     font-size: 15px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--gray);
     text-align: center;
 }
 
@@ -131,35 +143,59 @@ section#fashion {
 
 .text2 {
     width: 50%;
-    padding-right: 10px;
+    padding-right: 40px;
 }
 
 .text2 h3 {
     font-size: 15px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--gray);
     text-align: justify;
 }
 
-.text2 h1 {
-    font-size: 150px;
+.text2 h1#chat {
+    position: absolute;
+    font-size: 240px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--gray);
     text-align: right;
     margin-top: 36px;
+    top: 899px;
+    left: 0;
 }
 
 .img2 {
     width: 50%;
+    height: 100%;
 }
 
-.fashion-des2 .img2 img {
+.img2 .img2-1 {
+    display: flex;
     width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.img2 .img2-1 img {
+    width: 48%;
+    margin-right: 10px;
+}
+
+.img2 .img2-2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.img2 .img2-2 img {
+    width: 48%;
+    margin-right: 10px;
 }
 
 .fashion-des3 {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .text-empty {
@@ -168,6 +204,8 @@ section#fashion {
 
 .text3 {
     width: 33%;
+    padding-top: 55px;
+    padding-right: 40px;
 }
 
 .text3-1 {
@@ -177,15 +215,19 @@ section#fashion {
 .fashion-des3 h3 {
     font-size: 15px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--gray);
     text-align: justify;
 }
 
 .fashion-des3 h1 {
-    font-size: 180px;
+    font-size: 240px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--gray);
     text-align: right;
+}
+
+.fashion-des4 {
+    padding-top: 40px;
 }
 
 .fashion-des4 h1 {
@@ -202,10 +244,36 @@ section#fashion {
 
 .img5 {
     width: 50%;
+    height: 100%;
 }
 
-.img5 img {
+.img5 .img2-1 {
+    display: flex;
     width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.img5 .img2-1 img {
+    width: 48%;
+    margin-right: 10px;
+}
+
+.img5 .img2-2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.img5 .img2-2 img {
+    width: 48%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#lovisong {
+    width: 46%;
+    margin-top: 20px;
 }
 
 .text5 {
@@ -216,16 +284,31 @@ section#fashion {
 .text5 h3 {
     font-size: 15px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--gray);
     text-align: justify;
     margin-bottom: 25px;
 }
 
+.fashion-des6 {
+    position: relative;
+}
+
 .fashion-des6 h1 {
-    font-size: 100px;
+    font-size: 111px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--gray);
     text-align: center;
+}
+
+.fashion-des6 #bg {
+    font-size: 220px;
+    font-weight: 600;
+    color: var(--gray2);
+    text-align: center;
+    position: absolute;
+    top: -60px;
+    left: 45%;
+    z-index: -10;
 }
 
 .fashion-des7 {
@@ -242,23 +325,24 @@ section#fashion {
 .fashion-des7 h3 {
     font-size: 15px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--gray);
     text-align: center;
 }
 
 .fashion-des8 {
     display: flex;
-    padding-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .text8 {
-    width: 50%;
-    padding-right: 20px;
-    padding-top: 50px;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .text8 h1 {
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 600;
     color: var(--black);
     text-align: justify;
@@ -267,26 +351,61 @@ section#fashion {
 .text8 h3 {
     font-size: 15px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--gray);
     text-align: justify;
     margin-top: 50px;
 }
 
 .text8 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     margin-top: 50px;
 }
 
 .img8 {
-    width: 50%;
+    width: 40%;
 }
 
 .img8 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.img8 img#outimg {
+    width: 44%;
+    height: 140%;
+    object-fit: cover;
+    left: 0;
+    position: absolute;
 }
 
 #t8 ,#t81 {
-    padding-left: 20px;
+    padding-left: 50px;
+}
+
+#t8 {
+    padding-top: 100px;
+}
+
+.fashion-des9 {
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fashion-des9 h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: center;
+}
+
+.fashion-des9 img {
+    width: 300px;
+    object-fit: cover;
 }
 
 footer {
@@ -323,11 +442,12 @@ footer {
 .f-row2 {
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .f-row3 {
@@ -342,7 +462,7 @@ footer {
 .row2-title h3, .row3-info1 h3, .row3-info2 h3 {
     font-size: 15px;
     font-weight: 500;
-    color: var(--black);
+    color: var(--gray);
 }
 
 .row2-title #r2-e {
@@ -351,6 +471,10 @@ footer {
 
 .row2-title h3 {
     text-align: left;
+}
+
+.row2-title img {
+    width: 100px;
 }
 
 .row3-info1 h3 {
@@ -366,5 +490,10 @@ footer {
     #navbar {
         left: -950px;
         padding-top: 350px;
+    }
+
+    .img8 img#outimg {
+        width: 40%;
+        height: 110%;
     }
 }
