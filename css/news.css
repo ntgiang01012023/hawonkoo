@@ -23,6 +23,11 @@ header {
     height: 95px;
 }
 
+#menu-button {
+    border: none;
+    background-color: transparent;
+}
+
 .h-container {
     width: 80%;
     height: 95px;
@@ -66,9 +71,8 @@ secion#news1,  secion#news2 {
     display: none;
 }
 
-.active {
+button.active {
     color: var(--black);
-    background-color: aqua;
 }
 
 

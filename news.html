@@ -380,12 +380,16 @@ showSection(1);
   var buttons = document.getElementsByTagName("button");
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].classList.remove("active");
+    buttons[i].style.Color = "#A8A8A8";
+    buttons[i].style.backgroundColor = "";
   }
 
   var buttonId = "button" + sectionNumber;
   var button = document.getElementById(buttonId);
   if (button) {
     button.classList.add("active");
+    button.style.backgroundColor = "#A8A8A8"; // Thay đổi màu nền của nút được chọn thành đen
+    button.style.color = "white";
   }
     if (sectionNumber === 2) {
       var section1 = document.getElementById("news1");
