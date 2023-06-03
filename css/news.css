@@ -23,13 +23,8 @@ header {
     height: 95px;
 }
 
-#menu-button {
-    border: none;
-    background-color: transparent;
-}
-
 .h-container {
-    width: 80%;
+    width: 65%;
     height: 95px;
     border-bottom: 1px solid var(--black);
     display: flex;
@@ -40,6 +35,12 @@ header {
 
 .h-menu {
     margin-top: 60px;
+}
+
+#menu-button {
+    border: none;
+    background-color: transparent;
+    color: var(--black);
 }
 
 .h-menu a, .h-languages a {
@@ -53,16 +54,16 @@ header {
 }
 
 .h-logo img {
-    width: 60px;
+    width: 100%;
     height: 60px;
     object-fit: cover;
 }
-
 .h-languages {
     margin-top: 60px;
 }
 
-secion#news1,  secion#news2 {
+
+secion#news1,  secion#news2, secion#news2 {
     width: 100%;
     height: 200vh;
 }
@@ -82,13 +83,13 @@ button.active {
     padding-top: 30px;
 }
 
-.news-row1, .news-row2 {
+.news-row1, .news-row2, .news-row3 {
     width: 100%;
     height: 50%;
     display: flex;
 }
 
-.row1-left, .row1-right, .row2-left, .row2-right {
+.row1-left, .row1-right, .row2-left, .row2-right, .row3-left, .row3-right {
     width: 50%;
     height: 100%;
     text-align: left;
@@ -96,11 +97,18 @@ button.active {
 
 .row1-left {
     padding-top: 40px;
+    padding-right: 30px;
 }
 
 .row2-left {
     padding-top: 40px;
     padding-left: 40px;
+}
+
+.row3-left {
+    padding-top: 40px;
+    padding-right: 40px;
+    text-align: right;
 }
 
 #r3 {
@@ -109,23 +117,72 @@ button.active {
 }
 
 .news-title h1 {
-    font-size: 25px;
+    font-size: 34px;
     font-weight: 600;
     color: var(--black);
 }
 
+.news-title2 h1, .news-title3 h1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray);
+}
+
 .news-line {
-    width: 150px;
+    width: 160px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--gray);
     margin-top: 20px;
+}
+
+.news-line2 {
+    width: 160px;
+    height: 2px;
+    background-color: var(--gray);
+    margin-top: 40px;
+}
+
+.news-line3 {
+    width: 160px;
+    height: 2px;
+    background-color: var(--gray);
+    margin-top: 20px;
+    float: right;
 }
 
 .news-des h3 {
     font-size: 15px;
     font-weight: 500;
-    color: var(--black);
+    color: var(--gray);
     margin-top: 30px;
+}
+
+.news-des3 h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-top: 50px;
+}
+
+.news-day2 h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+.news-day3 h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+.news-des2 h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-top: 20px;
 }
 
 .news-des a {
@@ -142,7 +199,34 @@ button.active {
     margin-right: 30px;
 }
 
-.row1-right img, .row2-right img {
+.news-des2 a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 20px;
+    border: 2px solid var(--gray);
+    color: var(--gray);
+    bottom: 50px;
+    left: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.news-des3 a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 20px;
+    border: 2px solid var(--gray);
+    color: var(--gray);
+    bottom: 50px;
+    left: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.row1-right img, .row2-right img, .row3-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -152,37 +236,47 @@ button.active {
     text-align: center;
 }
 
-/* CSS cho section */
-
-  /* CSS cho nút button */
-  .pagination, .pagination1 {
+.pagination, .pagination1 {
     margin: 0 auto;
     width: 100%;
-    height: 60px;
-    padding-top: 20px;
+    height: 110px;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .pagination1 button {
-    padding: 5px 25px;
+.pagination {
+    padding-top: 70px;
+}
+
+.pagination1 {
+    padding-top: 20px;
+}
+
+.pagination1 a {
+    display: block;
+    width: 240px;
+    height: 38px;
     border: none;
     border-radius: 20px;
     background-color: var(--gray);
-    color: var(--white);
+    color: #fff;
     cursor: pointer;
-  }
+    text-decoration: none;
+    padding-top: 8px;
+    padding-left: 40px;
+}
 
-  .pagination button {
-    padding: 5px 10px;
+.pagination button {
+    width: 25px;
+    height: 25px;
     background-color: var(--white);
     border: 1px solid var(--gray);
     cursor: pointer;
-  }
+}
 
-  .pagination button:hover {
+.pagination button:hover {
     background-color: #ddd;
-  }
+}
 
 .h-menu button i {
     margin-right: 6px;
@@ -218,12 +312,12 @@ button.active {
 footer {
     width: 100%;
     height: 310px;
-    padding-top: 20px;
 }
 
 .f-container {
     width: 80%;
     margin: 0 auto;
+    border-top: 1px solid var(--black);
 }
 
 .f-row1 {
@@ -232,18 +326,24 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .row1-img #f-img1 {
-    width: 60px;
+    width: 100%;
     height: 60px;
     object-fit: cover;
 }
 
 .row1-img #f-img2 {
-    width: 250px;
-    height: 60px;
+    width: 100%;
+    height: 40px;
     object-fit: cover;
+}
+
+#hwk {
+    font-weight: 600;
 }
 
 .f-row2 {
@@ -253,12 +353,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-.row2-title img {
-    width: 100px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .f-row3 {
@@ -271,7 +367,7 @@ footer {
 }
 
 .row2-title h3, .row3-info1 h3, .row3-info2 h3 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     color: var(--black);
 }
@@ -282,6 +378,15 @@ footer {
 
 .row2-title h3 {
     text-align: left;
+}
+
+.row2-title img {
+    width: 54%;
+    height: 20px;
+}
+
+.row3-info1 {
+    width: 74%;
 }
 
 .row3-info1 h3 {

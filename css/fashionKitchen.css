@@ -48,7 +48,7 @@ header {
 }
 
 .h-container {
-    width: 80%;
+    width: 65%;
     height: 95px;
     border-bottom: 1px solid var(--gray);
     display: flex;
@@ -82,11 +82,10 @@ header {
 }
 
 .h-logo img {
-    width: 60px;
+    width: 100%;
     height: 60px;
     object-fit: cover;
 }
-
 .h-languages {
     margin-top: 60px;
 }
@@ -400,12 +399,14 @@ section#fashion {
     font-size: 15px;
     font-weight: 400;
     color: var(--gray);
-    text-align: center;
+    text-align: justify;
 }
 
 .fashion-des9 img {
     width: 300px;
     object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -415,7 +416,7 @@ footer {
 }
 
 .f-container {
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -428,26 +429,30 @@ footer {
 }
 
 .row1-img #f-img1 {
-    width: 60px;
+    width: 100%;
     height: 60px;
     object-fit: cover;
 }
 
 .row1-img #f-img2 {
-    width: 250px;
-    height: 60px;
+    width: 100%;
+    height: 40px;
     object-fit: cover;
+}
+
+#hwk {
+    font-weight: 600;
 }
 
 .f-row2 {
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid var(--black);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .f-row3 {
@@ -460,9 +465,9 @@ footer {
 }
 
 .row2-title h3, .row3-info1 h3, .row3-info2 h3 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
-    color: var(--gray);
+    color: var(--black);
 }
 
 .row2-title #r2-e {
@@ -474,7 +479,12 @@ footer {
 }
 
 .row2-title img {
-    width: 100px;
+    width: 54%;
+    height: 20px;
+}
+
+.row3-info1 {
+    width: 67%;
 }
 
 .row3-info1 h3 {
@@ -484,7 +494,6 @@ footer {
 .row3-info2 h3 {
     text-align: right;
 }
-
 
 @media (min-width: 1920px) {
     #navbar {

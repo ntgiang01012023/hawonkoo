@@ -14,6 +14,8 @@ body {
 :root {
     --black: #333;
     --white: #fff;
+    --gray: #A8A8A8;
+    --gray2: #ECECEC;
 }
 
 header {
@@ -23,7 +25,7 @@ header {
 }
 
 .h-container {
-    width: 80%;
+    width: 65%;
     height: 95px;
     border-bottom: 1px solid var(--black);
     display: flex;
@@ -47,7 +49,7 @@ header {
 }
 
 .h-logo img {
-    width: 60px;
+    width: 100%;
     height: 60px;
     object-fit: cover;
 }
@@ -97,7 +99,7 @@ section#support {
 
 .sp-title {
     width: 100%;
-    height: 200px;
+    height: 150px;
     text-align: center;
     padding-top: 60px;
 }
@@ -121,7 +123,7 @@ section#support {
 }
 
 .card {
-    width: 340px;
+    width: 350px;
     height: 360px;
     overflow: hidden;
     position: relative;
@@ -173,7 +175,6 @@ section#support {
 section#contact {
     width: 100%;
     height: 100vh;
-    border-bottom: 1px solid var(--black);
     background-image: url(../images/anh3.png);
     background-size: 100%;
     display: flex;
@@ -192,44 +193,56 @@ section#contact {
 
 .ct-title h1 {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--white);
 }
 
 .ct-searchbar {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
 }
 
 .ct-searchbar input {
     width: 100%;
     height: 45px;
-    border-radius: 20px;
+    border-radius: 40px;
     outline: none;
     border: none;
     padding: 0 20px;
 }
 
-.ct-searchbar i {
+.ct-searchbar button {
     position: absolute;
-    font-size: 25px;
+    padding: 3px 5px;
+    font-size: 22px;
     color: var(--black);
-    top: 9px;
-    right: 20px;
+    top: 8px;
+    right: 16px;
+    border-left: 1px solid var(--gray);
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.ct-searchbar button i {
+    margin-left: 10px;
 }
 
 .ct-selection {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .ct-selection a {
     display: inline-block;
     text-decoration: none;
-    padding: 5px 10px;
-    border: 2px solid var(--white);
+    width: 210px;
+    height: 40px;
+    padding-top: 8px;
+    border: 1px solid var(--white);
     color: var(--white);
     bottom: 50px;
     left: 100px;
@@ -240,13 +253,13 @@ section#contact {
 
 section#net {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
 }
 
 .n-container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .n-title {
@@ -282,11 +295,15 @@ section#net {
 .my-table {
     width: 100%;
     border-collapse: collapse;
+    padding-left: 20px;
 }
   
 .my-table th, .my-table td {
-    border: 1px solid #ddd;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
     padding: 8px;
+    text-align: left;
+    padding-left: 40px;
 }
   
 .my-table th {
@@ -334,7 +351,7 @@ footer {
 }
 
 .f-container {
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -347,15 +364,19 @@ footer {
 }
 
 .row1-img #f-img1 {
-    width: 60px;
+    width: 100%;
     height: 60px;
     object-fit: cover;
 }
 
 .row1-img #f-img2 {
-    width: 250px;
-    height: 60px;
+    width: 100%;
+    height: 40px;
     object-fit: cover;
+}
+
+#hwk {
+    font-weight: 600;
 }
 
 .f-row2 {
@@ -365,8 +386,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .f-row3 {
@@ -379,7 +400,7 @@ footer {
 }
 
 .row2-title h3, .row3-info1 h3, .row3-info2 h3 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     color: var(--black);
 }
@@ -393,7 +414,12 @@ footer {
 }
 
 .row2-title img {
-    width: 100px;
+    width: 54%;
+    height: 20px;
+}
+
+.row3-info1 {
+    width: 67%;
 }
 
 .row3-info1 h3 {
